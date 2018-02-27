@@ -11,6 +11,7 @@ var config = {
     filename: 'bundle.js',
     
   },
+
   module : {
     loaders : [
       {

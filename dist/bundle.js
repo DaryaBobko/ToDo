@@ -976,7 +976,7 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          ' Hello React Project'
+          ' Hello ghh'
         ),
         _react2.default.createElement(_AwesomeComponent.AwesomeComponent, null)
       );
