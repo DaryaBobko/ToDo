@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import {reducer} from './reducer.jsx';
+import reducer from './reducer.jsx';
 
 
 /*
@@ -8,5 +8,5 @@ import {reducer} from './reducer.jsx';
  * */
 
 export const allReducers = combineReducers({
-  initialSt: reducer,
+  reducer,
 });

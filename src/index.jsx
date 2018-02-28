@@ -24,4 +24,4 @@ ReactDOM.render(
     <App>
     </App>
   </Provider>, 
-  document.getElementById('root'));
+  document.getElementById('app'));
