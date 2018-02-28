@@ -9,7 +9,7 @@ export class App extends React.Component {
   render () {
     return(
       <div>
-        <p>Hello ssssss</p>
+        <p>Hello sss</p>
         <AwesomeComponent />
       </div>
     );

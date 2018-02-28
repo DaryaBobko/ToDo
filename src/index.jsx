@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import {App} from './app/app.jsx';
 // import {combineReducers} from 'redux';
 import {allReducers} from './reducer/index.jsx';
-
+import './index.scss';
 // window.addEventListener('load', () => {
 //   debugger;
 // const initialState = {

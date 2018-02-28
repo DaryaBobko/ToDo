@@ -30,9 +30,7 @@ var config = {
         ]
       }, {
         test: /\.scss/,
-        use: [
-          // 'css-loader', 'style-loader', 'scss-loader' как-то так будет
-        ]
+        use:['style-loader', 'css-loader', 'sass-loader',] 
       }
     ]
   }
