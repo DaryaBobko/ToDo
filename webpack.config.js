@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'dist');
-var APP_DIR = path.resolve(__dirname, 'src/app');
+var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
   entry: APP_DIR + '/index.jsx',
@@ -27,6 +27,11 @@ var config = {
           {
             loader: 'eslint-loader'
           }
+        ]
+      }, {
+        test: /\.scss/,
+        use: [
+          // 'css-loader', 'style-loader', 'scss-loader' как-то так будет
         ]
       }
     ]
