@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {AwesomeComponent} from './components/AwesomeComponent.jsx';
-
+import img from '../static-content/download.png';
 
 
 export class App extends React.Component {
@@ -9,7 +9,8 @@ export class App extends React.Component {
   render () {
     return(
       <div>
-        <p>Hello sss</p>
+        <img src={img}/>
+        <p>Hello s11ss</p>
         <AwesomeComponent />
       </div>
     );
