@@ -1,9 +1,16 @@
 
-const initialState = {};
+const initialState = [
+  'category1',
+  'category2'
+];
 
-export default function reducer(state = initialState, action = {}) {
-  switch (action.type) {
-  default:
-    return state;
+export default function addCategory(state = initialState, action) {
+  if (action.type === 'add_category'){
+
+    return [
+      ...state,
+      action.payload
+    ];
   }
+  return state;
 }

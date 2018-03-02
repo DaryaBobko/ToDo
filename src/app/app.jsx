@@ -1,17 +1,16 @@
 
-import React from 'react';
-import {AwesomeComponent} from './components/AwesomeComponent.jsx';
+import React, { Component } from 'react';
+import AddCategory from './components/addCategory/AddCategory.jsx';
 import img from '../static-content/download.png';
 
 
-export class App extends React.Component {
+export class App extends Component {
   
   render () {
     return(
       <div>
-        <img src={img}/>
-        <p>Hello s11ss</p>
-        <AwesomeComponent />
+        <img className='logo' src={img}/>
+        <AddCategory />
       </div>
     );
   }

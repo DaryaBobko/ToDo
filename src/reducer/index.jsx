@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import reducer from './reducer.jsx';
+import addCategory from './reducer.jsx';
 
 
 /*
@@ -8,5 +8,5 @@ import reducer from './reducer.jsx';
  * */
 
 export const allReducers = combineReducers({
-  reducer,
+  addCategory,
 });
