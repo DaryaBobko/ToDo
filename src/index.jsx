@@ -4,10 +4,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import {App} from './app/app.jsx';
-// import {combineReducers} from 'redux';
-// import reducers from './reducer/index.jsx';
+// import reducers from './reducers';
 import './index.scss';
-import addCategory from './reducer/reducer.jsx';
+import addCategory from './reducers/category.jsx';
 
 
 // const initialState = {

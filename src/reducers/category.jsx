@@ -1,8 +1,5 @@
 const initialState = {
-  categories: [ 
-    'category1',
-    'category2'
-  ],
+  categories: [],
 };
 
 export default function addCategory(state = initialState, action) {

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+// import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class AddCategory extends Component {
@@ -32,8 +33,8 @@ class AddCategory extends Component {
         <input onChange={this.handleChange} value={this.state.newCategory}/>
         <button onClick={this.addCategory}>add</button>
         <ul>
-          {this.props.testStore.map((category, index)=>
-            <li key={index}>{category}</li>
+          {this.props.categories.map((category, index)=>
+            <li key={index}>{category.name}</li>
           )} 
         </ul>
 
@@ -56,12 +57,16 @@ export default connect(
   state => {
     console.log('state', state);
     return {
-      testStore: state.categories,
+      categories: state.categories,
     };
   },
   dispatch => ({
-    onAddCategory: (categoryName) =>{
-      dispatch({type: 'ADD_CATEGORY', payload: categoryName});
+    onAddCategory: (name) =>{
+      const payload = {
+        id: Date.now().toString(), 
+        name
+      }
+      dispatch({type: 'ADD_CATEGORY', payload});
     }
   })
 )(AddCategory);
