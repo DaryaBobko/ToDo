@@ -1,16 +1,16 @@
-
-const initialState = [
-  'category1',
-  'category2'
-];
+const initialState = {
+  categories: [ 
+    'category1',
+    'category2'
+  ],
+};
 
 export default function addCategory(state = initialState, action) {
-  if (action.type === 'add_category'){
+  if (action.type === 'ADD_CATEGORY'){
 
-    return [
-      ...state,
-      action.payload
-    ];
+    return {
+      categories: [...state.categories, action.payload]
+    };
   }
   return state;
 }

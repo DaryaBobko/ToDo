@@ -13,23 +13,12 @@ class AddCategory extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-// store.subscribe(() => {
-//   console.log('subscribe' store.getState());
-//   const list = document.querySelectorAll('.list')[0];
-//   store.getState().forEach(categry =>{
-//     const li = document.createElement('li');
-//     li.textContent = categry;
-//     list.appendChild(li);
-//   });
-// })
-
   addCategory() {
-    //console.log(this.state.newCategory);
     this.props.onAddCategory(this.state.newCategory);
     this.setState({
       newCategory: '',
     });
-// store.dispatch({type: 'add_category', payload:this.state.newCategory});
+
   }
   handleChange(event){
     this.setState({
@@ -38,7 +27,6 @@ class AddCategory extends Component {
   }
 
   render() {
-  // console.log(this.props.testStore);
     return (
       <div>
         <input onChange={this.handleChange} value={this.state.newCategory}/>
@@ -65,7 +53,6 @@ AddCategory.defaultProps = {
 };
 
 export default connect(
-//  мапит стеит в пропс реакт компонента, позволяет следить за изменением компонента
   state => {
     console.log('state', state);
     return {
