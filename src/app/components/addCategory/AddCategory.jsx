@@ -1,6 +1,8 @@
 // import React, { Component, PropTypes } from 'react';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './addCategory.scss';
+import '../../../common/input/input.scss';
 
 class AddCategory extends Component {
 
@@ -30,8 +32,8 @@ class AddCategory extends Component {
   render() {
     return (
       <div>
-        <input onChange={this.handleChange} value={this.state.newCategory}/>
-        <button onClick={this.addCategory}>add</button>
+        <input className='input' onChange={this.handleChange} value={this.state.newCategory}/>
+        <button className='add-name' onClick={this.addCategory}>add</button>
         <ul>
           {this.props.categories.map((category, index)=>
             <li key={index}>{category.name}</li>

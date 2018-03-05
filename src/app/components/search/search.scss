@@ -1,0 +1,16 @@
+.checkbox-show{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: solid 1px #cccccc;
+}
+
+.checkbox-show:hover,
+.checkbox-show:focus{
+    border: solid 1px #57ad68;
+}
+
+.checkbox-show:active{
+    border: solid 1px #57ad68;
+    background-color: #57ad68;
+}
